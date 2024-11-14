@@ -1,0 +1,15 @@
+[0.086s] Invoking command in '/home/rock-e/motor_control/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rock-e/motor_control/build/diffdrive_arduino -- -j4 -l4
+[0.317s] [35m[1mConsolidate compiler generated dependencies of target diffdrive_arduino[0m
+[0.430s] [ 50%] [32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/hardware/diffbot_system.cpp.o[0m
+[12.403s] [01m[K/home/rock-e/motor_control/src/diffdrive_arduino/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn diffdrive_arduino::DiffDriveArduinoHardware::on_init(const hardware_interface::HardwareInfo&)[m[K’:
+[12.403s] [01m[K/home/rock-e/motor_control/src/diffdrive_arduino/hardware/diffbot_system.cpp:47:39:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[12.404s]    47 |   wheel_l_.setup(cfg_.left_wheel_name,[01;31m[K)[m[K;
+[12.404s]       |                                       [01;31m[K^[m[K
+[12.463s] [01m[K/home/rock-e/motor_control/src/diffdrive_arduino/hardware/diffbot_system.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type diffdrive_arduino::DiffDriveArduinoHardware::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[12.463s] [01m[K/home/rock-e/motor_control/src/diffdrive_arduino/hardware/diffbot_system.cpp:185:59:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[12.463s]   185 |   const rclcpp::Time & /*time*/, [01;35m[Kconst rclcpp::Duration & period[m[K)
+[12.464s]       |                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[14.822s] gmake[2]: *** [CMakeFiles/diffdrive_arduino.dir/build.make:76: CMakeFiles/diffdrive_arduino.dir/hardware/diffbot_system.cpp.o] Error 1
+[14.823s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/diffdrive_arduino.dir/all] Error 2
+[14.824s] gmake: *** [Makefile:146: all] Error 2
+[14.833s] Invoked command in '/home/rock-e/motor_control/build/diffdrive_arduino' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/rock-e/motor_control/build/diffdrive_arduino -- -j4 -l4
